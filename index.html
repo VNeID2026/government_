@@ -8,38 +8,23 @@ html,body{
 margin:0;
 padding:0;
 background:white;
-}
-
-body{
-min-height:200vh;
+overflow:hidden;
 }
 
 video{
 width:100%;
-height:auto;
-display:block;
-}
-
-.content{
 height:100vh;
-background:white;
-display:flex;
-justify-content:center;
-align-items:center;
-font-size:24px;
+object-fit:cover;
+display:block;
 }
 </style>
 </head>
 
 <body>
 
-<video autoplay muted controls playsinline>
+<video autoplay muted loop playsinline controlslist="nodownload noplaybackrate noremoteplayback" disablepictureinpicture>
 <source src="video.mov" type="video/quicktime">
 </video>
-
-<div class="content">
-    
-</div>
 
 </body>
 </html>
