@@ -10,10 +10,15 @@ padding:0;
 background:white;
 }
 
+/* cho phép scroll */
+body{
+min-height:200vh;
+}
+
+/* video không khóa màn hình */
 video{
 width:100%;
-height:100vh;
-object-fit:cover;
+height:auto;
 display:block;
 }
 </style>
@@ -21,9 +26,14 @@ display:block;
 
 <body>
 
-<video autoplay muted loop playsinline controlslist="nodownload noplaybackrate noremoteplayback" disablepictureinpicture>
-<source src="video.mov" type="video/quicktime">
+<video autoplay muted loop playsinline>
+    <source src="video.mov" type="video/quicktime">
 </video>
+
+<!-- phần bên dưới để test scroll -->
+<div style="height:100vh;background:white;display:flex;justify-content:center;align-items:center;">
+    
+</div>
 
 </body>
 </html>
